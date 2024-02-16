@@ -1,0 +1,126 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "HelveticaUltraLt";
+  src: url("/public//Fonts/HelveticaUltraLt_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.background {
+  background-image: url("/public/imgs/index-image.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 10%;
+  padding-top: 25px;
+  padding-left: 305px;
+}
+
+.title {
+  color: #ffff;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  font-weight: 100;
+  padding-top: 10%;
+  padding-left: 27%;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 100; /* Define a fonte como ultrafina */
+  padding-left: 27%;
+  padding-top: -100px; /* Ajuste vertical do h2, pode ser ajustado conforme necessário */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 3%;
+  margin-right: 21%;
+  padding: 0;
+  font-size: 20px;
+}
+
+.nav-list li {
+  margin-left: 10px;
+}
+
+.nav-list li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-list li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Distância da linha branca */
+  height: 1px;
+  background-color: #fff;
+}
+
+.bullet {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    background-image: url("/public/imgs/index-image-mobile.jpg");
+  }
+
+  .logo {
+    justify-content: flex-end;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column; /* Ajusta a direção dos itens como coluna */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .background {
+    background-image: url("/public/imgs/index-image.jpg");
+  }
+}

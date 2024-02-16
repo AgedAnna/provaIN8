@@ -1,0 +1,22 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.footer {
+  background-image: url("/public/imgs/rodape-desktop.jpg");
+  background-size: cover; /* Cobrir todo o tamanho do elemento */
+  background-position: center bottom; /* Posicionar a imagem no centro e na parte inferior */
+  height: 300px; /* Altura do rodapé */
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo no centro horizontalmente */
+  align-items: center; /* Alinha o conteúdo no centro verticalmente */
+}
+
+.footer p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
