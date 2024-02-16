@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/provaIN8/static/css/main.f855e6bc.css",
-    "main.js": "/provaIN8/static/js/main.bee32441.js",
-    "static/js/453.720f06ae.chunk.js": "/provaIN8/static/js/453.720f06ae.chunk.js",
+    "main.css": "/provaIN8/static/css/main.6f047818.css",
+    "main.js": "/provaIN8/static/js/main.752b75dc.js",
+    "static/media/index-image-mobile.jpg": "/provaIN8/static/media/index-image-mobile.ea34b2f0278626ff546f.jpg",
+    "static/media/index-image.jpg": "/provaIN8/static/media/index-image.82febeeb468b6c07a475.jpg",
+    "static/media/rodape-desktop.jpg": "/provaIN8/static/media/rodape-desktop.5ec8960bda5b17b21cfe.jpg",
+    "static/media/HelveticaUltraLt_0.ttf": "/provaIN8/static/media/HelveticaUltraLt_0.2473d8644ed753100869.ttf",
+    "static/media/logo-in8-dev.svg": "/provaIN8/static/media/logo-in8-dev.3370035bd7a9fab63d4282dca1e80ba6.svg",
     "static/media/logo.svg": "/provaIN8/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/provaIN8/index.html",
-    "main.f855e6bc.css.map": "/provaIN8/static/css/main.f855e6bc.css.map",
-    "main.bee32441.js.map": "/provaIN8/static/js/main.bee32441.js.map",
-    "453.720f06ae.chunk.js.map": "/provaIN8/static/js/453.720f06ae.chunk.js.map"
+    "main.6f047818.css.map": "/provaIN8/static/css/main.6f047818.css.map",
+    "main.752b75dc.js.map": "/provaIN8/static/js/main.752b75dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.bee32441.js"
+    "static/css/main.6f047818.css",
+    "static/js/main.752b75dc.js"
   ]
 }
