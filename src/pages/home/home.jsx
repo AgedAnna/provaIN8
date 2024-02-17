@@ -1,39 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-scroll";
 import logo from "./logo-in8-dev.svg";
 import "./home.css";
 
-const Home = ({ scrollToSection }) => {
+function CustomNavbar() {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <div className="background">
-      <nav class="navbar">
-        <img src={logo} alt="Logo IN8 Dev" class="logo" />
-        <ul class="nav-list">
-          <li>
-            <a href="#cadastro" onClick={() => scrollToSection("cadastro")}>
-              cadastro <span class="bullet">•</span>
-            </a>
-          </li>
-          <li>
-            <a href="#lista" onClick={() => scrollToSection("lista")}>
-              lista <span class="bullet">•</span>
-            </a>
-          </li>
-          <li>
-            <a href="#sobre" onClick={() => scrollToSection("sobre")}>
-              sobre mim<span class="bullet"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div className="title">
-        <h1>ESTÁGIO</h1>
-        <div>
-          <h2>PROVA DE SELEÇÃO</h2>
-        </div>
-      </div>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="transparent"
+        variant="dark"
+        expanded={expanded}
+      >
+        <Navbar.Brand
+          as={Link}
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <img src={logo} alt="logo" width="150px" className="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          style={{ marginRight: "20px" }}
+          onClick={toggleExpanded}
+        />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link
+              as={Link}
+              to="cadastro"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setExpanded(false)}
+            >
+              Cadastro
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="lista"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setExpanded(false)}
+            >
+              Lista
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="sobre"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setExpanded(false)}
+            >
+              Sobre Mim
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
-};
+}
 
-export default Home;
+export default CustomNavbar;

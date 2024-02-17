@@ -4,13 +4,21 @@ body {
 }
 
 @font-face {
-  font-family: "HelveticaUltraLt";
-  src: url("/public//Fonts/HelveticaUltraLt_0.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Helvetica";
+  src: url("/public/Fonts/HelveticaUltraLt_0.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "ps";
+  src: url("/public/Fonts/ps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/public/Fonts/Roboto-Light_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/public/Fonts/Roboto-Regular_0.ttf") format("truetype");
 }

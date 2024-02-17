@@ -1,16 +1,60 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .cadastro {
-    background-color: #29abe2;
-    height: 100vh;
-    background-size: cover;
-  }
-  
-  h1 {
-    margin: 0; /* Remove a margem padrão do h1 */
-  }
-  
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.cadastro {
+  background-color: #29abe2;
+  height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-text {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.buttonCadastrar {
+  height: 40px;
+  color: #29abe2;
+  background-color: #012d51;
+}

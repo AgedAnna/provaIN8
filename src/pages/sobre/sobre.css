@@ -7,16 +7,38 @@ html {
 
 .footer {
   background-image: url("/public/imgs/rodape-desktop.jpg");
-  background-size: cover; /* Cobrir todo o tamanho do elemento */
-  background-position: center bottom; /* Posicionar a imagem no centro e na parte inferior */
-  height: 300px; /* Altura do rodapé */
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
   display: flex;
-  justify-content: center; /* Alinha o conteúdo no centro horizontalmente */
-  align-items: center; /* Alinha o conteúdo no centro verticalmente */
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto-Light;
 }
 
-.footer p {
+.footer ul {
   color: white;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.footer ul li {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-image: url("/public/imgs/rodape-mobile.jpg");
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    background-image: url("/public/imgs/rodape-mobile.jpg");
+  }
 }
