@@ -1,3 +1,4 @@
+/* Estilo base */
 body,
 html {
   margin: 0;
@@ -11,50 +12,85 @@ html {
   background-size: cover;
 }
 
-h1 {
-  margin: 0;
+.titleCad {
+  font-size: 50px;
+  width: 70%;
+  color: #ffff;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 10%;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #fff;
+  margin: 10px 15px;
+  margin-top: 0px;
 }
 
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 label {
-  font-weight: bold;
+  font-weight: normal;
+  color: #fff;
   margin-bottom: 5px;
 }
 
 .input-text {
   padding: 8px;
+  color: #fff;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  font-family: Helvetica;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
+.buttonCadastrar {
+  font-size: 50px;
+  width: 40%;
+  height: 100px;
+  color: #29abe2;
+  background-color: #012d51;
   border: none;
+  margin-top: 20px;
   border-radius: 4px;
   cursor: pointer;
+  font-family: Helvetica;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    margin: 10px 50px;
+  }
+
+  .titleCad {
+    font-size: 35px;
+    width: 70%;
+    height: 60px;
+  }
+
+  .buttonCadastrar {
+    font-size: 30px;
+    width: 60%;
+    height: 60px;
+  }
 }
 
 button:hover {
-  background-color: #0056b3;
-}
-
-
-.buttonCadastrar {
-  height: 40px;
-  color: #29abe2;
-  background-color: #012d51;
+  background-color: #ffffff;
 }

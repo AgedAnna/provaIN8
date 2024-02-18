@@ -54,7 +54,7 @@ const Cadastro = () => {
   return (
     <>
       <div id="cadastro" className="cadastro">
-        <h1>Cadastro</h1>
+        <h1 className="titleCad">Cadastro</h1>
         <div className="input-container">
           <div className="input-wrapper">
             <label>Nome</label>
@@ -86,19 +86,21 @@ const Cadastro = () => {
               onChange={(e) => setNascimento(e.target.value)}
             />
           </div>
-          <div className="input-wrapper">
+          <div className="input-wrapper" style={{ color: "white" }}>
             <label>Telefone</label>
             <input
               type="tel"
               className="input-text"
-              placeholder="Telefone"
+              placeholder="(00) 00000 - 00"
               value={telefone}
               onChange={(e) => setTelefone(e.target.value)}
             />
           </div>
-          <button onClick={createUser} className="buttonCadastrar">
-            Cadastrar
-          </button>
+          <div className="buttonDiv">
+            <button onClick={createUser} className="buttonCadastrar">
+              Cadastrar
+            </button>
+          </div>
         </div>
       </div>
 
