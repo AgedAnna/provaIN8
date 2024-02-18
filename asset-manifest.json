@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/provaIN8/static/css/main.354944cf.css",
-    "main.js": "/provaIN8/static/js/main.c032d998.js",
+    "main.css": "/provaIN8/static/css/main.6c9bfd75.css",
+    "main.js": "/provaIN8/static/js/main.e0dc711c.js",
     "static/media/Roboto-Regular_0.ttf": "/provaIN8/static/media/Roboto-Regular_0.d08b3cc873089fdba7fb.ttf",
     "static/media/Roboto-Light_0.ttf": "/provaIN8/static/media/Roboto-Light_0.00fc594b8a514c3f772a.ttf",
     "static/media/rodape-mobile.jpg": "/provaIN8/static/media/rodape-mobile.3d20ef33b1df54453060.jpg",
@@ -12,11 +12,11 @@
     "static/media/HelveticaUltraLt_0.ttf": "/provaIN8/static/media/HelveticaUltraLt_0.2473d8644ed753100869.ttf",
     "static/media/logo-in8-dev.svg": "/provaIN8/static/media/logo-in8-dev.3370035bd7a9fab63d4282dca1e80ba6.svg",
     "index.html": "/provaIN8/index.html",
-    "main.354944cf.css.map": "/provaIN8/static/css/main.354944cf.css.map",
-    "main.c032d998.js.map": "/provaIN8/static/js/main.c032d998.js.map"
+    "main.6c9bfd75.css.map": "/provaIN8/static/css/main.6c9bfd75.css.map",
+    "main.e0dc711c.js.map": "/provaIN8/static/js/main.e0dc711c.js.map"
   },
   "entrypoints": [
-    "static/css/main.354944cf.css",
-    "static/js/main.c032d998.js"
+    "static/css/main.6c9bfd75.css",
+    "static/js/main.e0dc711c.js"
   ]
 }
