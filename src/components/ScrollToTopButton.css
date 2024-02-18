@@ -1,0 +1,20 @@
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.scrollUp {
+  background-color: transparent;
+  color: #808080;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.scrollUp:hover {
+  background-color: transparent;
+  color: #012d51;
+}

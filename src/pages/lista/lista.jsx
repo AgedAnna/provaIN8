@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./lista.css";
 import TabPane from "antd/es/tabs/TabPane";
 import { Card, Tabs } from "antd";
-import { DeleteOutlined } from "@ant-design/icons";
+import { DeleteOutlined, UpCircleOutlined } from "@ant-design/icons";
+import ScrollToTopButton from "../../components/buttonUp";
 
 const Lista = ({ data, deleteUser }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -84,6 +85,9 @@ const Lista = ({ data, deleteUser }) => {
                 ))}
             </tbody>
           </table>
+          <div class="up">
+            <ScrollToTopButton />
+          </div>
         </div>
       )}
     </div>
