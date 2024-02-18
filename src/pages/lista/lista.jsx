@@ -28,7 +28,10 @@ const Lista = ({ data, deleteUser }) => {
           <p>EMAIL: {user.email}</p>
           <p>TELEFONE: {user.telefone}</p>
           <p>NASCIMENTO: {formatDate(user.nascimento)}</p>
-          <button onClick={() => deleteUser(user.id)}>Deletar</button>
+          <button onClick={() => deleteUser(user.id)} className="delete">
+            {" "}
+            Deletar
+          </button>
         </Card>
       </TabPane>
     ));
