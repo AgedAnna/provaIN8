@@ -1,3 +1,5 @@
+/* lista.css */
+
 body,
 html {
   margin: 0;
@@ -7,10 +9,73 @@ html {
 
 .lista {
   background-color: #ffffff;
-  height: 100vh;
-  background-size: cover;
+  padding: 20px;
 }
 
 h1 {
-  margin: 0; /* Remove a margem padrão do h1 */
+  margin: 0;
+  color: #29abe2;
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 5%;
+  margin-right: 25%;
+}
+
+.lista-table {
+  width: 100%;
+}
+
+.lista-table th,
+.lista-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.lista-table th {
+  background-color: #ffffff;
+  color: #012d51;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.lista-table td {
+  background-color: #ffffff;
+  color: #808080;
+  text-align: center;
+}
+
+.lista-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.border-primary {
+  border-color: #29abe2 !important;
+}
+
+.border-secondary {
+  border-color: #6c757d !important;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.custom-tab-pane {
+  border: 1px solid #29abe2;
+  border-radius: 6px;
+}
+
+.custom-tab-title {
+  color: #29abe2;
+}
+
+@media (max-width: 769px) {
+  h1 {
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-right: 99px;
+    margin-bottom: 50px;
+  }
 }

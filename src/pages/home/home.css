@@ -71,6 +71,6 @@ h2 {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .background {
-    background-image: url("/public/imgs/index-image.jpg");
+    background-image: url("/public/imgs/index-image-mobile.jpg");
   }
 }

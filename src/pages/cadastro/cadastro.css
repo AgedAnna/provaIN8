@@ -8,7 +8,7 @@ html {
 
 .cadastro {
   background-color: #29abe2;
-  height: 100vh;
+  height: 120vh;
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ html {
   gap: 10px;
   color: #fff;
   margin: 10px 15px;
-  margin-top: 0px;
+  margin-top: -50px;
 }
 
 .input-wrapper {
@@ -62,10 +62,24 @@ label {
   color: #29abe2;
   background-color: #012d51;
   border: none;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 4px;
   cursor: pointer;
   font-family: Helvetica;
+}
+
+.loading{
+  color: #e2e2e2;
+  background-color: #5e5f5f;
+}
+
+.error {
+  color: red;
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 5px;
+  width: 280px;
+  border-radius: 6px;
 }
 
 .buttonDiv {
@@ -88,6 +102,15 @@ label {
     font-size: 30px;
     width: 60%;
     height: 60px;
+  }
+
+  .error {
+    color: red;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    width: 257px;
+    border-radius: 6px;
   }
 }
 
