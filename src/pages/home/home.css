@@ -25,27 +25,24 @@ html {
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid white; /* Adiciona uma linha suave de 2px brancas ao passar o mouse */
+  border-bottom: 2px solid white;
 }
 
-.title {
+.titleEstagio {
   color: #ffff;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 250px;
 }
 
-h1 {
+.estagioh1 {
+  color: #ffff;
   font-family: Helvetica;
   font-size: 65px;
   font-weight: 100;
-  padding-top: 10%;
-  padding-left: 27%;
-}
-
-h2 {
-  font-family: Helvetica;
-  font-size: 28px;
-  font-weight: 100;
-  padding-left: 27%;
-  padding-top: -100px;
 }
 
 @media (max-width: 768px) {
@@ -53,24 +50,43 @@ h2 {
     background-image: url("/public/imgs/index-image-mobile.jpg");
   }
 
-  .title {
+  .titleEstagio {
+    color: #ffff;
+    font-family: Helvetica;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
   }
 
-  h1,
-  h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 65px;
+  .estagioh1 {
+    color: #ffff;
+    font-family: Helvetica;
+    font-size: 20px;
     font-weight: 100;
-    text-align: center; /* Centraliza o texto */
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .background {
     background-image: url("/public/imgs/index-image-mobile.jpg");
+  }
+
+  .titleEstagio {
+    color: #ffff;
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+  }
+
+  .estagioh1 {
+    color: #ffff;
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: 100;
   }
 }

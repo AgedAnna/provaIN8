@@ -12,13 +12,13 @@ html {
   padding: 20px;
 }
 
-h1 {
+.titleLista {
   margin: 0;
   color: #29abe2;
   text-align: center;
   font-size: 55px;
   margin-bottom: 5%;
-  margin-right: 25%;
+  padding-top: 5%;
 }
 
 .lista-table {
@@ -69,13 +69,32 @@ h1 {
   color: #29abe2;
 }
 
+.delete {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #e02828;
+  color: #ffffff;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.delete:hover {
+  background-color: #29abe2;
+}
+
+.icon {
+  font-size: 20px;
+}
+
 @media (max-width: 769px) {
-  h1 {
-    font-size: 35px;
-    align-items: center;
+  .titleLista {
+    margin: 0;
+    color: #29abe2;
     text-align: center;
-    display: flex;
-    margin-right: 99px;
-    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: 5%;
+    padding-top: 5%;
   }
 }

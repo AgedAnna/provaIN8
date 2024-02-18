@@ -69,6 +69,11 @@ function CustomNavbar() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <div className="titleEstagio">
+        <h1 className="estagioh1">
+          ESTÁGIO <br /> PROVA DE SELEÇÃO
+        </h1>
+      </div>
     </div>
   );
 }

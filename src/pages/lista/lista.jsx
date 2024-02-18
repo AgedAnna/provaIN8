@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./lista.css";
 import TabPane from "antd/es/tabs/TabPane";
 import { Card, Tabs } from "antd";
+import { DeleteOutlined } from "@ant-design/icons";
 
 const Lista = ({ data, deleteUser }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -46,7 +47,7 @@ const Lista = ({ data, deleteUser }) => {
 
   return (
     <div id="lista" className="lista">
-      <h1>Lista de Cadastro</h1>
+      <h1 className="titleLista">Lista de Cadastro</h1>
       {isMobile ? (
         <Tabs type="card">{renderUserCards()}</Tabs>
       ) : (
@@ -72,8 +73,11 @@ const Lista = ({ data, deleteUser }) => {
                     <td>{item.telefone}</td>
                     <td>{formatDate(item.nascimento)}</td>
                     <td>
-                      <button onClick={() => deleteUser(item.id)}>
-                        Deletar
+                      <button
+                        onClick={() => deleteUser(item.id)}
+                        className="delete"
+                      >
+                        <DeleteOutlined className="icon" /> Deletar
                       </button>
                     </td>
                   </tr>
